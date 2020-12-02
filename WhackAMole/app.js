@@ -22,6 +22,9 @@ square.forEach(id =>{
             result+=1;
             score.textContent = result;
         }
+        square.forEach(className => {
+        className.classList.remove('mole');
+    })
     })
 })
 let timerId2 = null;
@@ -40,7 +43,7 @@ function countDown(){
     if(currentTime ===0){
         clearInterval(timerId);
         clearInterval(timerId2);
-        document.querySelector(".grid").innerHTML = "<h1>Game Over! Your Score: "+result+"</h1><a href='../ConnectFour/index.html'><button style='padding: 5px;'>Next Game</button></a>"
+        document.querySelector(".grid").innerHTML = "<h1>Game Over! Your Score: "+result+"</h1>&nbsp;&nbsp;&nbsp;&nbsp;<a href='../ConnectFour/index.html'><button style='padding: 5px;'>Next Game</button></a>"
         
     }
 }
