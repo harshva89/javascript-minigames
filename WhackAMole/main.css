@@ -1,0 +1,19 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border: solid;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 650px;
+}
+
+.mole {
+  background-image: url("https://raw.githubusercontent.com/kubowania/whack-a-mole/master/mole.jpg");
+  background-size: cover;
+}
